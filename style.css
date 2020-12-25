@@ -1,0 +1,45 @@
+body {
+    font-size: 24px; /*Default fonts for site*/
+    font-family: 'Times New Roman', Arial;
+}
+
+nav {
+    width: calc(100% - 5px);
+    margin-left: 10px;
+}
+
+nav > ul {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    flex-direction: row;
+    list-style: none;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 98%;
+}
+
+img {
+    margin: 0px 20px 20px 20px;
+}
+
+audio {
+    width: 640px;
+}
+
+p.text {
+    display: flex;
+    margin-right: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Times New Roman', Arial;
+}
+
+hr {
+    height: 20px;
+    background-color: green;
+}
