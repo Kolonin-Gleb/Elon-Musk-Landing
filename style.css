@@ -6,6 +6,9 @@ body {
 nav {
     width: calc(100% - 5px);
     margin-left: 10px;
+    /* position: fixed; */ /*TODO:pin navigation menu to the top of the screen*/
+    left: 0px;
+    top: 0px;
 }
 
 nav > ul {
