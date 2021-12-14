@@ -13,6 +13,7 @@ nav {
     top: -25px;
 }
 
+/*Styles for ul inside nav*/
 nav > ul {
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
@@ -23,6 +24,10 @@ nav > ul {
     justify-content: space-between;
     padding: 10px;
     width: 98%;
+}
+/*styles for class elements <li> of class menu*/
+.menu li a:hover {
+    color:brown;
 }
 
 img {
@@ -36,6 +41,12 @@ audio {
 p.text {
     display: flex;
     margin-right: 50px;
+}
+
+/*Change color of highlight*/
+::selection {
+    background-color:#ffee38;
+    color:#191919
 }
 
 h2 {
