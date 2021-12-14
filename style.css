@@ -5,10 +5,12 @@ body {
 
 nav {
     width: calc(100% - 5px);
+    /*Left and Right Indent*/
     margin-left: 10px;
-    /* position: fixed; */ /*TODO:pin navigation menu to the top of the screen*/
+    margin-right: 10px;
+    position: fixed; /*TO DO:pin navigation menu to the top of the screen*/
     left: 0px;
-    top: 0px;
+    top: -25px;
 }
 
 nav > ul {

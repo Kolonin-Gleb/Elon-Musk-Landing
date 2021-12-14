@@ -1,3 +1,3 @@
-let today = new Date();
-alert("Today's date is " + today);
+// let today = new Date();
+// alert("Today's date is " + today);
 
