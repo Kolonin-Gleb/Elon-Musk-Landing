@@ -5,10 +5,9 @@ body {
 
 nav {
     width: calc(100% - 5px);
-    /*Left and Right Indent*/
     margin-left: 10px;
     margin-right: 10px;
-    position: fixed; /*TO DO:pin navigation menu to the top of the screen*/
+    position: fixed;
     left: 0px;
     top: -25px;
 }
@@ -61,12 +60,20 @@ hr {
 }
 
 .btn {
-    display: inline-block;
+    width: 100%;
+    text-align: center;
     background: gray;
     color: rgb(234, 247, 51);
-    padding: 32px 48px;
-    text-decoration: none; /* Do not underline */
-    border-radius: 3px; /* round angles */
+    font-size: 50px;
+    border-radius: 5px;
+
+    /*Change color on hover*/
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
+.btn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
 
