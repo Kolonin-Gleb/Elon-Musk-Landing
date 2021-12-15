@@ -1,0 +1,72 @@
+/*Map position*/
+.map {
+    position: relative;
+    text-align: center;
+}
+
+/*Resolution doesn't affect map size*/
+.map img {
+    width: 100%;
+    height: auto;
+}
+
+/*Interactive map position*/
+.map svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*To make map interactive*/
+.state {
+    fill: none;
+    stroke: #000;
+    stroke-width: 5px;
+    pointer-events: all; /*Interaction using cursor - allowed*/
+    cursor: pointer; /*Change cursor on hover*/
+
+    /*Opacity for borders*/
+    opacity: 0.4;
+    transition: 0.3s;
+}
+
+/*Launch animation when cursor is on state*/
+.state:hover {
+    animation: hoverElement 2s linear infinite; 
+    opacity: 0.8;
+    transition: 0.3s;
+    fill: orange;
+}
+
+/*Animation Cyclic color change*/
+@keyframes hoverElement { 
+    0% {
+        stroke: #000000;
+    }
+    50% {
+        stroke: #fc0000;
+    }
+    100% {
+        stroke: #000000; 
+    }
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+    background: gray;
+    color: rgb(234, 247, 51);
+    font-size: 50px;
+    border-radius: 5px;
+
+    /*Change color on hover*/
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
