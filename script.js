@@ -14,7 +14,7 @@ let tooltip = document.querySelector('.tooltip');
 states.forEach((state) => {
     //Call Pop-up
     state.addEventListener('click', function() {
-
+        //Changing data of tags attributes //Insreting needed values
         popup__title.textContent = this.getAttribute('data-title');
         popup__photo.setAttribute('src', this.getAttribute('data-photo'));
         popup__text.textContent = this.getAttribute('data-text');
@@ -26,8 +26,8 @@ states.forEach((state) => {
     //Hint following mouse
     state.addEventListener('mousemove', function(e) {
         tooltip.innerText = this.dataset.title;
-        tooltip.style.top = (e.y + 20) + 'px';
-        tooltip.style.left = (e.x + 20) + 'px';
+        tooltip.style.top = (e.y - 40) + 'px';
+        tooltip.style.left = (e.x - 25) + 'px';
     });
 
     //Mouse enters area
@@ -38,12 +38,12 @@ states.forEach((state) => {
 
     //Mouse leaves area
     state.addEventListener('mouseleave', function() {
-        tooltip.textContent = state.getAttribute('data-title');
+        // tooltip.textContent = state.getAttribute('data-title');
         tooltip.style.display = 'none';
     });
 });
 
-//For Pop-up
+//Close Pop-up
 document.addEventListener('click', (e) => {
     if(e.target === popupBg)
     {

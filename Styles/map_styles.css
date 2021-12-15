@@ -23,7 +23,7 @@
 .state {
     fill: none;
     stroke: #000;
-    stroke-width: 3px;
+    stroke-width: 5px;
     pointer-events: all; /*Interaction using cursor - allowed*/
     cursor: pointer; /*Change cursor on hover*/
 

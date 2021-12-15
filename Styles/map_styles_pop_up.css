@@ -1,12 +1,15 @@
 /*Displayed hints*/
 .tooltip {
     position: absolute;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-    background: rgb(226, 21, 21);
+    font-family: 'Cursive';
+    background: rgb(235, 205, 201);
     color: black;
     border-radius: 10px;
     padding: 5px;
+    fill: none;
+    display: none;
 }
 
 /*Pop-up styles*/
