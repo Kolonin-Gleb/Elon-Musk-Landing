@@ -19,7 +19,7 @@
     height: 100%;
 }
 
-/*Styles to make map interactive*/
+/*To make map interactive*/
 .state {
     fill: none;
     stroke: #000;
