@@ -20,7 +20,7 @@
 }
 
 /*Styles to make map interactive*/
-.map svg path {
+.state {
     fill: none;
     stroke: #000;
     stroke-width: 3px;
@@ -33,7 +33,7 @@
 }
 
 /*Launch animation when cursor is on state*/
-.map svg path:hover {
+.state:hover {
     animation: hoverElement 2s linear infinite; 
     opacity: 0.8;
     transition: 0.3s;
@@ -52,14 +52,3 @@
         stroke: #000000; 
     }
 }
-/**/
-.tooltip {
-    border-radius: 5px;
-    padding: 5px;
-    font-weight: 500;
-    background: #fff;
-    color: #000;
-    font-size: 14px;
-    position: absolute;
-}
-
